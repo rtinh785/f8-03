@@ -173,6 +173,7 @@ a {
 }
 
 .hero__heading {
+    line-height: 8rem;
     font-size: 7rem;
     font-weight: 600;
     color: #FFF;
@@ -241,6 +242,7 @@ a {
 }
 
 .heading-common {
+    line-height: 6rem;
     font-size: 5rem;
     font-weight: 600;
     color: var(--heading-color);
@@ -249,6 +251,7 @@ a {
 .desc-common {
     margin-top: 18px;
     font-size: 1.8rem;
+    font-weight: 300;
     line-height: 3rem;
     color: var(--desc-color);
 }
@@ -390,3 +393,199 @@ a {
     color: #2e80ce;
 }
 
+/* feature */
+
+.feature {
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.feature__main-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.feature__media {
+  position: relative;
+  width: 570px;
+  height: 491px;
+}
+
+.feature__img--big{
+    position: absolute;
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+    object-fit: cover;
+}
+
+.feature__img--small {
+    position: absolute;
+    width: 332px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+    right: 0px;
+    bottom: 0px;
+}
+
+.feature__content{
+    padding-top: 82px;
+}
+
+.feature__desc{
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+.feature__action{
+    padding-left: 51px;
+    padding-right: 51px;
+    margin-top: 38px;
+}
+
+/* member */
+
+.member__heading{
+    text-align: center;
+}
+
+.member_action {
+    margin: 38px auto 70px auto;
+    max-width: 205px;
+    display: block;  
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.member-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    background: #EAF6FF;
+    padding-top: 26px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item_img-avatar {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.member-item__desc {
+    color: #575F66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+}
+
+.member__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+    margin-top: 38px;
+}
+
+
+.member__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    border: 1px solid #575F66;
+    outline: none;
+    transition: 0.25s;
+}
+
+.member__btn:hover {
+    background-color: #2E80CE;
+    border-color: #2E80CE;
+    color: white;
+    cursor: pointer;
+}
+
+.member_btn-next-icon{
+    rotate: 180deg;
+}
+
+.member-item:hover .member-item_img-avatar{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* install app */
+
+.install {
+    margin-top: 265px;
+}
+
+.install-inner{
+    display: flex;
+    background-color: #2E80CE;
+    border-radius: 4px;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+    margin-left: 70px;
+}
+
+.install__content {
+    margin-top: 76px;
+    margin-left: 160px;
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc{
+    color: #FFF;
+}
+
+.install__desc {
+    font-weight: 100;
+}
+
+.install__dowload-on{
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+    margin-right: 28px;
+}
+
+.install__btn{
+   padding: 0;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
